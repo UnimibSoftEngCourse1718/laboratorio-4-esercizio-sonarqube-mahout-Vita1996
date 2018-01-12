@@ -59,6 +59,7 @@ public class MatrixView extends AbstractMatrix {
     this.offset = offset;
   }
 
+  //"clone" implementation
   @Override
   public Matrix clone() {
     MatrixView clone = (MatrixView) super.clone();
