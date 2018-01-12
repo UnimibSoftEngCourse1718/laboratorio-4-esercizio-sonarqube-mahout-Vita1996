@@ -444,7 +444,7 @@ public class H2OHelper {
   }
 
   public static Matrix allreduceBlock(H2ODrm drmA, Object bmfn, Object rfn) {
-    class MRTaskMR extends MRTask<MRTaskMR> {
+    class MRTaskMR extends MRTask<MRTaskMR> { //this class has 6 parfents which is greater than 5 authorized
       H2OBCast<Matrix> bmf_out;
       Serializable bmf;
       Serializable rf;
