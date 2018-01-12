@@ -92,7 +92,7 @@ public class MatrixView extends AbstractMatrix {
     return new int[]{rowSize(), columnSize()};
 
   }
-
+  //duplicated code
   @Override
   public Matrix viewPart(int[] offset, int[] size) {
     if (offset[ROW] < 0) {
