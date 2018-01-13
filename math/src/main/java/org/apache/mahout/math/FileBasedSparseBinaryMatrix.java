@@ -206,6 +206,7 @@ public final class FileBasedSparseBinaryMatrix extends AbstractMatrix {
         high = mid;
       }
     }
+    //Duplicated code
     if (low >= row.limit()) {
       return 0;
     } else if (high == low && row.get(low) == columnIndex) {
