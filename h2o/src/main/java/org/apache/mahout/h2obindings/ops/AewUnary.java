@@ -41,7 +41,7 @@ public class AewUnary {
    * @return new DRM constructed from mapped values of drmA through f.
    */
   public static H2ODrm exec(H2ODrm drmA, Object f, final boolean evalZeros) {
-
+	  //Refactor this method to reduce its cognitive complexity
     Frame A = drmA.frame;
     Vec keys = drmA.keys;
     final int ncol = A.numCols();
